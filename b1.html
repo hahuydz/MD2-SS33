@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hiển thị ra</title>
+    <script src="./b1.css"></script>
+   
+</head>
+<body>
+    <div class="password-container">
+        <input type="password" id="password" placeholder="Enter your password">
+        <span class="toggle-password" onclick="togglePassword()">O</span>
+    </div>
+    <script>
+        function togglePassword(  ) {
+            var passwordInput = document.getElementById("password");
+            if (passwordInput.type === "password") {
+                passwordInput.type = "text";
+            } else {
+                passwordInput.type = "password";
+            }
+        }
+    </script>
+</body>
+</html>
